@@ -2,7 +2,7 @@ apt-get update && apt-get upgrade
 
 termux-setup-storage 
 
-pkg install python 
+pkg install -y python 
 
 pip install yt-dlp 
 
@@ -26,8 +26,8 @@ else mkdir -p ~/.config/yt-dlp;
 	echo"made dir"
 fi
  
-apt-get install nano ffmpeg
-pkg install vim git curl wget
+apt-get install -y nano ffmpeg
+pkg install -y vim git curl wget
 
 FILE=~/.config/yt-dlp/config 
 if [ -f "$FILE" ]; then
